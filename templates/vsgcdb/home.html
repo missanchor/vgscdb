@@ -1,0 +1,93 @@
+{% load static %}
+<head>
+  <link rel="stylesheet" href="{% static 'vgscdb/css/home.css' %}" />
+</head>
+<body class="body">
+    <div class="nav">
+      <div class="div-block-5">
+        <h1 class="heading-4">VGSC-DB</h1>
+      </div>
+      <div class="div-block-6">
+        <a href="#" class="nav-link w-inline-block">
+          <div>Home</div>
+        </a>
+        <a href="#" class="nav-link w-inline-block">
+          <div>Data</div>
+        </a>
+        <a href="#" class="nav-link w-inline-block">
+          <div>Help</div>
+        </a>
+      </div>
+    </div>
+    <div class="search-body">
+      <div class="div-block-18">
+        <div class="form-block w-form">
+          <form role="search" method="get" id="searchform" action="{% url 'vgscdb:search' %}">
+            <div class="div-block-7"><input class="text-field w-input" maxlength="256" name="q" data-name="q" placeholder="compound" type="search" id="name" required><button type="submit" class="button">
+              <img src="{% static 'vgscdb/images/search.png' %}" loading="lazy" width="34" alt="" class="image-2">
+          </button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div></div>
+    <div class="div-block-14">
+      <section class="section">
+        <h1 class="heading-7">What is VGSC-DB</h1>
+      </section>
+      <section>
+        <p class="paragraph-2"><strong>VGSC-DB</strong> (Voltage-gated Sodium Channels Database) is the largest professional online database of voltage-gated sodium channels (VGSCs/Navs), which comprehensively collects the compound and receptor data resources of sodium channels. VGSC-DB provides open access to <strong>6055</strong> data records, including <strong>3396</strong> compounds from <strong>173</strong> references across nine subtypes of Navs (Nav1.1~Nav1.9), to accelerate scientific research. Each data record contains <strong>28</strong> items of information, including the chemical structure, biological activity (IC<sub>50</sub>/EC<sub>50</sub>), target, binding site, organism, chemical and physical properties, etc.</p>
+      </section>
+    </div>
+    <div></div>
+    <div class="advantages">
+      <div class="div-block-8">
+        <div class="w-layout-blockcontainer container-4 w-container">
+          <h1 class="heading-7">Advantages</h1>
+        </div>
+        <div>
+          <div class="div-block-9">
+            <div id="w-node-_87807cc2-ffc8-ef04-52a7-031337416b07-68b7bcc9" class="div-block-10">
+              <div class="div-block-13">
+                <h1 class="heading-6">Accurate</h1>
+              </div>
+              <p class="paragraph">Accuracy is one of the fundamental requirements in the construction of a database. Each data has been manually validated and is supported by the corresponding reference. Users are able to refer to the original documents to find more details. Great efforts have been made to ensure the accuracy of the data. </p>
+            </div>
+            <div id="w-node-a06702d8-1e10-2c05-dc9e-2b3cc1516cd0-68b7bcc9" class="div-block-10">
+              <div class="div-block-13">
+                <h1 class="heading-6"><strong>Comprehensive</strong></h1>
+              </div>
+              <p class="paragraph">VGSC-DB contains all available data of VGSCs in large databases (e.g., BindingDB, ChEMBL, etc.), with a wide range of additional data resources. Besides, VGSC-DB provides not only a large number of small molecules but also collects various toxins and their derivatives, the majority of which are unique to VGSC-DB.</p>
+            </div>
+            <div id="w-node-_797c1483-f6b9-43a1-0dca-be55f8239e4a-68b7bcc9" class="div-block-10">
+              <div class="div-block-13">
+                <h1 class="heading-6"><strong>Convenient</strong></h1>
+              </div>
+              <p class="paragraph">While some databases collect VGSC compound data, they lack details on binding sites, biological activities, and molecular properties. VGSC-DB, however, provides concise, comprehensive information for compound retrieval and data download for model construction and structure-activity analysis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="div-block-22">
+      <div id="w-node-_448d7ec0-d14b-ebba-fc30-7432c5c77c2e-68b7bcc9" class="div-block-23">
+        <div id="w-node-a3722ead-dff8-10e5-4f8b-7c2989998813-68b7bcc9" class="lastcard">
+          <div>
+            <h3>Contact us</h3>
+          </div>
+          <div>
+            <p class="paragraph-4">College of Pharmaceutical Science,<br>Zhejiang University,<br>Hangzhou, Zhejiang 310058, China</p>
+          </div>
+        </div>
+        <div id="w-node-_3b70e247-50c7-3323-4738-1b934a73822b-68b7bcc9" class="lastcard">
+          <div>
+            <h3>Develog Tool</h3>
+          </div>
+          <div class="div-block-27">
+            <div>&gt; Python</div>
+            <div>&gt; Django</div>
+            <div>&gt; Rdkit</div>
+          </div>
+        </div>
+      </div>
+    </div>
